@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style(3).css">
+    
+    <title>Qalyn calculator</title>
+  </head>
+  <body>
+        <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="container">
+                <h1 class="text-center">QALYN CALCULATOR</h1>
+                <form>
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="blank"></option>
+                        <option id="edu1" value="bachelor">Bachelor's degree</option>
+                        <option id="edu2" value="college">College degree</option>
+                        <option id="edu3" value="high_school">High school degree</option>
+                        <option id="edu4" value="middle_school">Middle school degree</option>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth">
+                        <option  value="blank"></option>
+                        <option id="networth1" value="upper_class">More than 100,000$</option>
+                        <option id="networth2" value="middle_class">Between 50,000$ and 100,000$</option>
+                        <option id="networth3" value="lower_class">Less than 50,000$</option>
+                    </select>
+                    <hr>
+                    <label id="skills" for="skills">Groom's skills:</label><br>
+                        <label class="container-c"> Playing on dombra
+                            <input type="checkbox" id="skill1">
+                            <span class="checkmark"></span>
+                          </label>
+
+                          <label class="container-c">Good cook
+                            <input type="checkbox" id="skill2">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-c">Easygoing character
+                            <input type="checkbox" id="skill3">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-c">Sings well 
+                            <input type="checkbox" id="skill4">
+                            <span class="checkmark"></span>
+                          </label>
+                          <hr>
+                        
+                    <label for="Groom's_age">Groom's age:</label><br>
+                    <div class="form_radio_btn">
+                        <input id="radio-1" type="radio" name="radio" value="1">
+                        <label for="radio-1">Between 18-23</label>
+                    </div>
+                    <div class="form_radio_btn">
+                        <input id="radio-2" type="radio" name="radio" value="2">
+                        <label for="radio-2"> Between 24-27 </label>
+                    </div>
+                     
+                    <div class="form_radio_btn">
+                        <input id="radio-3" type="radio" name="radio" value="3">
+                        <label for="radio-3"> 28+ </label>
+                    </div>
+                    <hr>
+                    <label for="Groom's_reputation">Groom's reputation:</label><br>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="reputation1">
+                        <label class="form-check-label" for="reputation1">Gossips about his parent's attitude</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="reputation2">
+                        <label class="form-check-label" for="reputation2">Gossips about his character</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="reputation3">
+                        <label class="form-check-label" for="reputation3">General gossips around his person</label>
+                      </div>
+                </form>
+                <br>
+                <button id="submit1" type="button" class="btn btn-primary">Calculate price</button>
+            </div>
+            <br>
+            <br>
+            <div class="result" id='res'></div>
+        </div>
+    </div>
+    <script src="java(3).js"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
